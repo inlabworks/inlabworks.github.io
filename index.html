@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Inlab - Experience Innovation</title>
     <style>
         body {
@@ -23,6 +25,14 @@
             max-width: 640px;
         }
 
+        .Card {
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            margin: 1rem 0;
+            position: relative;
+        }
+
         .Media {
             display: flex;
             justify-content: center;
@@ -37,12 +47,7 @@
             margin-left: 16px;
         }
 
-        .Card {
-            background: #fff;
-            border-radius: 4px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-            margin: 1rem 0;
-            position: relative;
+        @media (min-width:641px)  {
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,9 +58,9 @@
     <div class="Main">
         <div class="Content">    
             <h1>inlab.works</h1>
-            <h3>experience innovation through our content</h3>
-            <div class="Card">
-                <a class="twitter-timeline" data-width="640" data-height="640" href="https://twitter.com/inlab_works?ref_src=twsrc%5Etfw">
+            <h3>contenido para experimentar innovación</h3>
+            <div class="Card" style="max-height: 70vh; overflow-y: auto;">
+                <a class="twitter-timeline" data-width="640" href="https://twitter.com/inlab_works?ref_src=twsrc%5Etfw">
                     inlab_works en Twitter
                 </a> 
             </div>
