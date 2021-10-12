@@ -1,85 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Inlab - Experience Innovation</title>
-    <style>
-        body {
-            background-color: #eceff1;
-            color: rgba(0,0,0,0.87);
-            font-family: 'Roboto', sans-serif;
-        }
+        <title>Inlab - Experience Innovation</title>
+        <style>
+            body {
+                background-color: #eceff1;
+                color: rgba(0, 0, 0, 0.87);
+                font-family: "Roboto", sans-serif;
+            }
 
-        a {
-            text-decoration: none;
-            color: rgba(0,0,0,0.87);
-        }
+            a {
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.87);
+            }
 
-        .Main {
-            display: flex;
-            justify-content: center;
-        }
+            .Main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
 
-        .Content {
-            max-width: 640px;
-        }
+            .Content {
+                flex-grow: 1;
+                max-width: 640px;
+            }
 
-        .Card {
-            background: #fff;
-            border-radius: 4px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-            margin: 1rem 0;
-            position: relative;
-        }
+            .Card {
+                background: #fff;
+                border-radius: 4px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                    0 3px 6px rgba(0, 0, 0, 0.23);
+                margin: 1rem 0;
+                position: relative;
+            }
 
-        .Media {
-            display: flex;
-            justify-content: center;
-        }
+            .Media {
+                display: flex;
+                justify-content: center;
+            }
 
-        .Media__Link {
-            height: 24px;
-            width: 24px;
-        }
+            .Media__Link {
+                height: 24px;
+                width: 24px;
+            }
 
-        .Media__Link + .Media__Link {
-            margin-left: 16px;
-        }
+            .Media__Link + .Media__Link {
+                margin-left: 16px;
+            }
 
-        @media (min-width:641px)  {
-        }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="Main">
-        <div class="Content">    
-            <h1>inlab.works</h1>
-            <h3>contenido para experimentar innovación</h3>
-            <div class="Card" style="max-height: 70vh; overflow-y: auto;">
-                <a class="twitter-timeline" data-width="640" data-dnt="true" href="https://twitter.com/inlab_works?ref_src=twsrc%5Etfw">
-                    inlab_works en Twitter
-                </a> 
+            .Canvas {
+                margin: 16px 0;
+            }
+
+            @media (min-width: 641px) {
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+        rel="stylesheet"
+        />
+        <script defer src="index.js"></script></head>
+    </head>
+    <body>
+        <div class="Main">
+            <div class="Content">
+                <h1>inlab.works</h1>
+                <h3>contenido para experimentar innovación</h3>
+                <div class="Card" style="max-height: 70vh; overflow-y: auto">
+                    <a
+                        class="twitter-timeline"
+                        data-width="640"
+                        data-dnt="true"
+                        href="https://twitter.com/inlab_works?ref_src=twsrc%5Etfw"
+                    >
+                        inlab_works en Twitter
+                    </a>
+                </div>
+            </div>
+            <div>
+                <canvas class="Canvas" id="xperience-innovation"></canvas>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="Media">
-            <a class="Media__Link" href="https://twitter.com/inlab_works">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path fill="rgba(0,0,0,0.85)" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-            </a>
-            <a class="Media__Link" href="https://twitch.tv/inlab_works">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitch</title><path fill="rgba(0,0,0,0.85)" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/></svg>
-            </a>
-            <a class="Media__Link" href="https://www.youtube.com/channel/UCeLPaHpgXdghXfwNSKltS2w">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path fill="rgba(0,0,0,0.85)" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            </a>
-        </div>
-        
-    </footer>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </body>
+        <footer>
+            <div class="Media">
+                <a class="Media__Link" href="https://twitter.com/inlab_works">
+                    <svg
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>Twitter</title>
+                        <path
+                            fill="rgba(0,0,0,0.85)"
+                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                        />
+                    </svg>
+                </a>
+                <a class="Media__Link" href="https://twitch.tv/inlab_works">
+                    <svg
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>Twitch</title>
+                        <path
+                            fill="rgba(0,0,0,0.85)"
+                            d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"
+                        />
+                    </svg>
+                </a>
+                <a
+                    class="Media__Link"
+                    href="https://www.youtube.com/channel/UCeLPaHpgXdghXfwNSKltS2w"
+                >
+                    <svg
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>YouTube</title>
+                        <path
+                            fill="rgba(0,0,0,0.85)"
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </footer>
+        <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+        ></script>
+    </body>
 </html>
