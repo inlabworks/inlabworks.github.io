@@ -1,0 +1,268 @@
+.body {
+  background-color: #0f0f0f;
+  font-family: Comfortaa, sans-serif;
+  overflow: scroll;
+}
+
+.banner {
+  max-width: 100%;
+}
+
+.banner---mobile {
+  display: none;
+}
+
+.banner---desktop {
+  display: block;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  margin-top: 0px;
+}
+
+.title {
+  color: #bebebe;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.clock {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.clock---number {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+    sans-serif;
+  font-size: 3.75rem;
+  line-height: 72px;
+}
+
+.clock---element {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 24px;
+  padding-left: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #bebebe;
+}
+
+.text-block {
+  color: #bebebe;
+  text-align: center;
+}
+
+.container-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.div-block-2 {
+  width: 50%;
+}
+
+.textfield {
+  min-height: 52px;
+  border: 1px solid #bebebe;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #bebebe;
+  color: #0f0f0f;
+  text-align: left;
+}
+
+.label {
+  color: #bebebe;
+  font-size: 0.75rem;
+}
+
+.Link {
+  color: #bebebe;
+}
+
+.Link:hover {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 991px) {
+  .banner---desktop {
+    margin-top: 32px;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .container-3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .div-block-2 {
+    width: 50%;
+  }
+
+  .form-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .textfield {
+    min-height: 52px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bebebe;
+    border-radius: 4px;
+    background-color: transparent;
+  }
+
+  .button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #bebebe;
+    color: #0f0f0f;
+  }
+
+  .label {
+    color: #bebebe;
+    font-size: 0.75rem;
+  }
+}
+
+.Media {
+  display: flex;
+  justify-content: center;
+}
+
+.Media__Link {
+  color: #ffffff;
+  height: 24px;
+  width: 24px;
+}
+
+.Media__Link + .Media__Link {
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .banner---mobile {
+    display: block;
+  }
+
+  .banner---desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .body {
+    -webkit-text-fill-color: inherit;
+    background-clip: border-box;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .banner---mobile {
+    display: block;
+  }
+
+  .clock---number {
+    font-size: 3rem;
+    line-height: 64px;
+  }
+
+  .clock---element {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .div-block-2 {
+    width: 100%;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+}
