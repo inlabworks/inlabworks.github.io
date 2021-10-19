@@ -256,6 +256,11 @@ header {
     padding-right: 16px;
   }
 
+  header {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
   .banner---mobile {
     display: block;
   }
