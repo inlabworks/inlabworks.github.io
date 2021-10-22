@@ -1,5 +1,5 @@
 (function () {
-  const deadline = new Date("2021-10-20T01:00:00Z");
+  const deadline = new Date("2021-10-27T01:00:00Z");
   const pad = (num, size) => {
     const s = "0" + num;
     return s.substr(s.length - size);
